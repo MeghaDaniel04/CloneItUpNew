@@ -1,0 +1,186 @@
+:root{
+    --bg-black:#1C1C1C;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body,html{
+    min-height: 100vh;
+    width:100%;
+    overflow-x: hidden;
+    
+}
+
+.sidebar{
+    position:fixed;
+    padding-top: 30px ;
+    padding-bottom: 50px;
+    width:80px;
+    height:100vh;
+    background: var(--bg-black);
+}
+.sidebar ul{
+height:100%;
+}
+
+.sidebar img{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+  .btn-color
+  {
+    background: #2D61DE;
+   height:38px;
+   width:62px;
+   border-radius: 80px;
+  }
+
+  .card-img
+  {
+    width:200px;
+    height:150px;
+  }
+
+  .sidebar1 {
+    background-color: #FFFFFF;
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2, h3, h4, p {
+    color: #333;
+  }
+  
+  a {
+    color: #4DA1FF;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  /* Calendar Section */
+  /* Calendar Widget Styling */
+.calendar-widget {
+    display: flex;
+    background-color: #F4F7FA;
+    padding: 10px 20px;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .calendar-day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
+    padding: 10px;
+  }
+  
+  .calendar-day .day-name {
+    font-size: 12px;
+    font-weight: 500;
+    color: #333333;
+    margin-bottom: 5px;
+  }
+  
+  .calendar-day .day-number {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333333;
+  }
+  
+  .calendar-day.active {
+    background-color: #306EFF;
+    color: #FFFFFF;
+    border-radius: 20px;
+    padding: 10px 20px;
+  }
+  
+  .calendar-day.active .day-name, 
+  .calendar-day.active .day-number {
+    color: #FFFFFF;
+  }
+  
+  
+  .date {
+    width: 40px;
+    height: 40px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .date.active {
+    background-color: #4DA1FF;
+    color: #FFF;
+  }
+  
+  /* Mentors Section */
+  .mentors-section {
+    margin-bottom: 30px;
+  }
+  
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .mentor {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .mentor img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .mentor-info {
+    font-size: 14px;
+  }
+  
+  .mentor-info h4 {
+    font-size: 16px;
+    color: #000;
+  }
+  
+  /* Learning Process Section */
+  .learning-process-section {
+    margin-bottom: 30px;
+  }
+  
+  .progress-bar {
+    margin-bottom: 15px;
+  }
+  
+  .progress {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    height: 10px;
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  .progress-fill {
+    height: 100%;
+    border-radius: 10px;
+  }

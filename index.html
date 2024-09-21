@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloneItUp</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <div class=" bg-[#F2F4F6] flex h-full">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <ul class="flex flex-col justify-between h-full">
+                <div>
+                    <div class="pb-8 flex justify-center">
+                        <li>
+                            <div class="transition-all duration-300 ease-in-out relative border-2 border-transparent hover:border-white hover:rounded-full">
+                                <img class="nav-img" src="./assets/all_inclusive.png" alt="">
+                            </div>
+                        </li>
+                    </div>
+                    <div class="flex flex-col items-center space-y-2">
+                        <li>
+                            <div class="transition-all duration-300 ease-in-out relative border-2 border-transparent hover:border-white hover:rounded-full">
+                                <img class="nav-img" src="./assets/team_dashboard.png" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="transition-all duration-300 ease-in-out relative border-2 border-transparent hover:border-white hover:rounded-full">
+                                <img class="nav-img" src="./assets/draft.png" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="transition-all duration-300 ease-in-out relative border-2 border-transparent hover:border-white hover:rounded-full">
+                                <img class="nav-img" src="./assets/calendar_month.png" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="transition-all duration-300 ease-in-out relative border-2 border-transparent hover:border-white hover:rounded-full">
+                                <img class="nav-img" src="./assets/folder.png" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="transition-all duration-300 ease-in-out relative border-2 border-transparent hover:border-white hover:rounded-full">
+                                <img class="nav-img" src="./assets/chat.png" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="transition-all duration-300 ease-in-out relative border-2 border-transparent hover:border-white hover:rounded-full">
+                                <img class="nav-img" src="./assets/brightness_empty.png" alt="">
+                            </div>
+                        </li>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <li>
+                        <div class="transition-all duration-300 ease-in-out relative border-2 border-transparent hover:border-white hover:rounded-full">
+                            <img class="nav-img" src="./assets/logout.png" alt="">
+                        </div>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+        
+      
+        <!-- Main Content -->
+        <session class="flex-grow ml-[80px]  p-2">
+            <header class=" shadow-md pb-2 flex mb-[20px] justify-between items-center">
+                <h2 class="text-xl font-semibold">Courses</h2>
+                <div class="flex items-center w-fulljustify-between space-x-4">
+                    <h4 class="text-base">RajaLeksmi Muthupandeya</h4>
+                    <img class="w-10 h-10  rounded-full" src="./assets/Avatar (4).png" alt="Avatar">
+                </div>
+            </header>
+            
+            <main class="h-full">
+                <div class="flex">
+                    
+                    <div class="w-8/12">
+                        <div>
+                            <ul class="flex flex-row justify-evenly items-center mb-[10px]">
+                                <li class="hover:text-black hover:underline hover:font-bold">All</li>
+                                <li class="hover:text-black hover:underline hover:font-bold">Advertising</li>
+                                <li class="hover:text-black hover:underline hover:font-bold">Designing</li>
+                                <li class="hover:text-black hover:underline hover:font-bold">Marketing</li>
+                                <li class="hover:text-black hover:underline hover:font-bold">Illustration</li>
+                                <li class="hover:text-black hover:underline hover:font-bold">Brand</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="cards-container  p-4 flex flex-col space-y-4" id="cardsContainer">
+                            <!-- Cards  rendered -->
+                        </div>
+                    </div>
+        
+                    <!-- -->
+                    <div class=" p-4" data-aos="fade-right">
+                        <div class="sidebar1 bg-[#F2F4F6]">
+                            <div>
+                                <h3 class="font-bold p-4">JULY 2024</h3>
+                            </div>
+                          <!-- Calendar-->
+                          <div class="calendar-widget bg-white rounded-xl pb-4"></div>
+                      
+                          <!-- Mentors -->
+                          <section class="mentors-section bg-white rounded-xl mt-2">
+                            <div class="section-header ">
+                              <h3 class="p-4">Mentors</h3>
+                            
+                            </div>
+                          </section>
+                      
+                          <!-- Learning Process Section -->
+                          <section class="learning-process-section bg-white rounded-xl p-2 rouded-xl">
+                            <div class="section-header">
+                              <h3>Learning Process</h3>
+                              
+                            </div>
+                          </section>
+                        </div>
+                      </div>
+                      
+                </div>
+            </main>
+            
+        </session>
+        
+    </div>   
+
+</body>
+<script src="../../assets/vendor/aos/dist/aos.js"></script>
+<script src="script.js"></script>
+<script>
+    $(document).on('ready', function () {
+      // initialization of aos
+      AOS.init({
+        duration: 1200,
+        once: true
+      });
+    });
+  </script>
+</html>
